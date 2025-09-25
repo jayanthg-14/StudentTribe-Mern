@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Enter number to find the single digit throug sum of digits"));
+        if (num >0){
+            sum = 0;
+        while(num!=0){
+            sum += num%10
+            num = parseInt(num/10);
+            if (num ==0 && sum>9){
+                num = sum;
+                sum = 0;
+            }
+        }
+        document.write(sum);
+        }
+        else{
+            document.write("not a valid input");
+        }
+       
+    </script>
+</body>
+</html>

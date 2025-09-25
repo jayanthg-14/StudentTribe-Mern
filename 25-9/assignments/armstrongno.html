@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Emter the number to find whether it is an arms strong number or not"));
+        let find_var = num;
+        let final_var = num;
+        let length = 0;
+
+        while(find_var!=0){
+            find_var = parseInt(find_var/10);
+            length += 1;
+        }
+
+        let arm_no = 0;
+        while(num!=0){
+            arm_no += (num%10)**length;
+            num = parseInt(num/10);
+        }
+        if(arm_no == final_var && final_var>=0){
+            document.write("it is an armstrong number");
+        }
+        else{
+            document.write("It is not an armstrong number");
+        }
+</script>
+</body>
+</html>

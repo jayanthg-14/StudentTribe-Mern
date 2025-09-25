@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = 0;
+        
+        while(num<=100){
+        let divisibles = 0;
+        let i = 0;
+        while(i<=num && divisibles<=3){
+            if(num%i==0){
+                divisibles +=1;
+            }
+        i++;
+        }
+        if(divisibles ==2){
+            document.write(`${num} `);
+        }
+        num +=1;
+        }
+        
+    
+    </script>
+</body>
+</html>
